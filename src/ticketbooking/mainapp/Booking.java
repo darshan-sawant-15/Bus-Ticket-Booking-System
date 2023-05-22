@@ -71,7 +71,7 @@ public final class Booking extends javax.swing.JFrame implements MouseListener {
             con = DriverManager.getConnection("jdbc:mysql://localhost/bus", "root", "");
 
             conntxt.setText("Database Connected");
-            conntxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/checked.png")));
+            conntxt.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("checked.png")));
 
             bookbtn.setEnabled(true);
             chkrecordsbtn.setEnabled(true);
@@ -112,7 +112,7 @@ public final class Booking extends javax.swing.JFrame implements MouseListener {
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Booking.class.getName()).log(Level.SEVERE, null, ex);
             conntxt.setText("Database Not Connected");
-            conntxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/warning.png")));
+            conntxt.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("warning.png")));
             bookbtn.setEnabled(false);
             chkrecordsbtn.setEnabled(false);
             printbtn.setEnabled(false);
@@ -322,7 +322,7 @@ public final class Booking extends javax.swing.JFrame implements MouseListener {
         jLabel1.setFont(new java.awt.Font("Nunito", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/bus-stop.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("bus-stop.png"))); // NOI18N
         jLabel1.setText("Bus Ticket Booking System");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -348,62 +348,62 @@ public final class Booking extends javax.swing.JFrame implements MouseListener {
         seat1.setBackground(new java.awt.Color(255, 0, 0));
         seat1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat1.setForeground(new java.awt.Color(3, 14, 79));
-        seat1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat1.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat1.setText("1");
 
         seat2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat2.setForeground(new java.awt.Color(3, 14, 79));
-        seat2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat2.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat2.setText("2");
 
         seat3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat3.setForeground(new java.awt.Color(3, 14, 79));
-        seat3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat3.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat3.setText("3");
 
         seat4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat4.setForeground(new java.awt.Color(3, 14, 79));
-        seat4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat4.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat4.setText("4");
 
         seat5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat5.setForeground(new java.awt.Color(3, 14, 79));
-        seat5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat5.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat5.setText("5");
 
         seat7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat7.setForeground(new java.awt.Color(3, 14, 79));
-        seat7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat7.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat7.setText("7");
 
         seat8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat8.setForeground(new java.awt.Color(3, 14, 79));
-        seat8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\office-chair.png")); // NOI18N
+        seat8.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat8.setText("8");
 
         seat9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat9.setForeground(new java.awt.Color(3, 14, 79));
-        seat9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat9.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat9.setText("9");
 
         seat10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat10.setForeground(new java.awt.Color(3, 14, 79));
-        seat10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat10.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat10.setText("10");
 
         seat11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat11.setForeground(new java.awt.Color(3, 14, 79));
-        seat11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat11.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat11.setText("11");
 
         seat6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat6.setForeground(new java.awt.Color(3, 14, 79));
-        seat6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat6.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat6.setText("6");
 
         seat12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         seat12.setForeground(new java.awt.Color(3, 14, 79));
-        seat12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/office-chair.png"))); // NOI18N
+        seat12.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("office-chair.png"))); // NOI18N
         seat12.setText("12");
 
         busname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -569,7 +569,7 @@ public final class Booking extends javax.swing.JFrame implements MouseListener {
 
         conntxt.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         conntxt.setForeground(new java.awt.Color(255, 255, 255));
-        conntxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketbooking/mainapp/checked.png"))); // NOI18N
+        conntxt.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("checked.png"))); // NOI18N
         conntxt.setText("Database Connnnected");
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
